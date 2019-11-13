@@ -2,7 +2,10 @@
   "name": "voyager-cross",
   "version": "1.0.0",
   "description": "It is a joke",
-  "main": "index.js",
+  "main": "./lib/greet.js",
+  "bin": {
+    "greet": "./bin/index.js"
+  },
   "scripts": {
     "test": "node test.js"
   },
@@ -15,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/ZhangWei-KUMO/voyager-cross/issues"
   },
-  "homepage": "https://github.com/ZhangWei-KUMO/voyager-cross#readme"
+  "homepage": "https://github.com/ZhangWei-KUMO/voyager-cross#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "lodash": "^4.17.15"
+  }
 }
