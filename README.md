@@ -5,5 +5,5 @@ This is a joke package for saying hello world;
 ## installation
 
 ```
-npm i yogager-cross --save
+npm intall -g yogager-cross 
 ```
