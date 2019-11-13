@@ -7,6 +7,6 @@ console.log(
   // wraps text with rainbow color formatting
   colors.rainbow(
     // returns the random greeting text
-    "Hello World"
+    greet.greetRandom()
   )
 );
