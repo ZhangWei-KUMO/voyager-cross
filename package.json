@@ -1,0 +1,19 @@
+{
+  "name": "voyager-cross",
+  "version": "1.0.0",
+  "description": "It is a joke",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhangWei-KUMO/voyager-cross.git"
+  },
+  "author": "Zhang Wei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZhangWei-KUMO/voyager-cross/issues"
+  },
+  "homepage": "https://github.com/ZhangWei-KUMO/voyager-cross#readme"
+}
