@@ -1,6 +1,6 @@
 {
   "name": "voyager-cross",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "It is a joke",
   "main": "./lib/greet.js",
   "bin": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ZhangWei-KUMO/voyager-cross#readme",
   "dependencies": {
+    "archy": "^1.0.0",
     "colors": "^1.4.0",
     "lodash": "^4.17.15"
   }
