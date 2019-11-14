@@ -1,8 +1,8 @@
 {
   "name": "voyager-cross",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "It is a joke",
-  "main": "./lib/greet.js",
+  "main": "./lib/voyager.js",
   "bin": {
     "greet": "./bin/index.js",
     "voyager": "./bin/voyager.js"
