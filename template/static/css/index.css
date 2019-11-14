@@ -1,0 +1,23 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+}
+
+nav {
+  background: rgb(0, 183, 255);
+  height: 50px;
+  padding: 10px 100px;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.logo {
+  width: 160px;
+  margin-top: 200px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+}

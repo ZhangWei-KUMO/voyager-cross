@@ -12,7 +12,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <html lang="zh-Hans">
+      <html>
         <Head>
           <meta charSet="UTF-8" />
           <meta content="index, follow" name="robots"></meta>
