@@ -1,13 +1,48 @@
+
 const express = require("express");
 const next = require("next");
+const fs = require("fs");
+const bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
+const compression = require("compression");
+const requestIp = require('request-ip');
+const dev = process.env.NODE_ENV !== "production";
+const configure = require("./configure/index.js");
+const app = next({ dev });
+const { DESTINATION, createSitemap } = require("./sitemap");
+const routes = require('./routes');
+const handle = routes.getRequestHandler(app, ({ req, res, route, query }) => {
+  app.render(req, res, route.page, query)
+});
 
 const server = express();
+server.set("trust proxy", 1);
+server.set("port", configure.port);
+server.use(bodyParser.json({ limit: '10mb' }));
+server.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
+server.use(requestIp.mw())
+server.use(cookieParser());
+server.use(compression());
 
-server.get("*", (req, res) => res.status(200).sendFile('./index.html'));
+server.use((req, res, next) => next());
 
-server.listen(3000, (err) => {
-  if (err) throw err;
-  console.log(`启动安全服务器,端口号：3000`);
+app.prepare().then(() => {
+  server.get("/sitemap.xml", (req, res) => {
+    res.header("Content-Type", "application/xml");
+    (async function sendXML() {
+      let xmlFile = await createSitemap();
+      res.send(xmlFile);
+      fs.writeFileSync(DESTINATION, xmlFile);
+    })();
+  });
+  server.get("*", (req, res) => {
+    return handle(req, res);
+  });
+
+  server.listen(configure.port, (err) => {
+    if (err) throw err;
+    console.log(`Start Application,the port number is ${configure.port}`);
+  });
 });
 
 process.on("uncaughtException", (err) => {
