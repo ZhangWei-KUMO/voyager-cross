@@ -28,7 +28,7 @@ if (program.init) {
         console.log(chalk.green(menu));
         console.log(chalk.white.bgBlue.bold('Installing packages...'));
         process.chdir(projectDirName);
-        // execInstallNPM();
+        execInstallNPM();
       })
       .resume();
   } else {
