@@ -6,7 +6,7 @@ const vfs = require('vinyl-fs');
 const archy = require('archy');
 const architecture = require('../architecture');
 const menu = archy(architecture);
-
+const execInstallNPM = require('../lib/install');
 
 program
   .version('0.0.1')
@@ -27,7 +27,7 @@ if (program.init) {
         console.log(menu)
         console.log('Installing packages...');
         process.chdir(projectDirName);
-        require('../lib/install');
+        execInstallNPM();
       })
       .resume();
 
