@@ -25,7 +25,9 @@ if (program.init) {
       .pipe(vfs.dest(projectDirName))
       .on('end', function () {
         console.log(menu)
-        console.log('Installing packages...')
+        console.log('Installing packages...');
+        process.chdir(projectDirName);
+        require('../lib/install');
       })
       .resume();
 
