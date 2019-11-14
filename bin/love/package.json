@@ -1,0 +1,13 @@
+{
+  "name": "voyager-template",
+  "version": "0.0.1",
+  "description": "Next.js Chinese Template",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "react": "16.4.2",
+    "express": "4.16.3"
+  }
+}
