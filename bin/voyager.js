@@ -10,7 +10,7 @@ const menu = archy(architecture);
 const execInstallNPM = require('../lib/install');
 
 program
-  .version('1.1.9')
+  .version('1.2.1')
   .option('-i, --init [name]', 'initiating a application')
 
 program.parse(process.argv);
