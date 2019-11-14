@@ -22,7 +22,7 @@ if (program.init) {
     console.log(chalk.white.bgGreen.bold(`Initiating the project in ${projectPath}`));
     fs.ensureDirSync(program.init);
     var templatePath = path.join(__dirname, '../template');
-    vfs.src(['*', '**/*', '!node_modules/*'], { cwd: templatePath, dot: true })
+    vfs.src(['*', '**/*', '**/**/*', '!node_modules/*'], { cwd: templatePath, dot: true })
       .pipe(vfs.dest(projectDirName))
       .on('end', function () {
         console.log(chalk.green(menu));
