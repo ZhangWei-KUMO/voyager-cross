@@ -14,8 +14,10 @@ npm intall -g voyager-cross
 ```bash
 # generate your project
 voyager -i <YOUR_PROJECT_NAME>
-# start 
-npm dev
+# start then open localhost:3000
+npm run dev
+# or
+yarn dev
 ```
 
 ## Why did I write it?
