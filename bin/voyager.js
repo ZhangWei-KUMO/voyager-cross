@@ -30,7 +30,6 @@ if (program.init) {
         execInstallNPM();
       })
       .resume();
-
   } else {
     console.log("Lacking project name, Please input your project name after 'voyager --init'")
   }
