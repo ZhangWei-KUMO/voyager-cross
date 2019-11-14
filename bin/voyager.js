@@ -1,5 +1,5 @@
+#!/usr/bin/env node
 const program = require('commander');
-
 program
   .option('-d, --debug', 'output extra debugging')
   .option('-s, --small', 'small pizza size')
