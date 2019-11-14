@@ -19,7 +19,8 @@
     "nodemon": "1.18.3",
     "request": "2.88.0",
     "isomorphic-unfetch": "^3.0.0",
-    "compression": "1.7.3"
+    "compression": "1.7.3",
+    "styled-components": "4.3.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
