@@ -19,7 +19,7 @@ if (program.init) {
   let projectDirName = program.init;
   if (typeof projectDirName === "string") {
     var projectPath = path.resolve(projectDirName);
-    console.log(chalk.white.bgGreen.bold(`Initialing a next.js project in ${projectPath}`));
+    console.log(chalk.white.bgGreen.bold(`Initiating the project in ${projectPath}`));
     fs.ensureDirSync(program.init);
     var templatePath = path.join(__dirname, '../template');
     vfs.src(['*', '**/*', '!node_modules/*'], { cwd: templatePath, dot: true })
