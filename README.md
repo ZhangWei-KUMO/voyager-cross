@@ -1,7 +1,7 @@
 # What is this?
 
 This is a react application template generator,which is based on react.js + next.js + express.js。
-You can deploy a simple SSR react application fastly with it。 
+You can deploy a simple isomorphic react application fastly with it。 
 
 ## Installation
 

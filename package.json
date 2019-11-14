@@ -1,7 +1,12 @@
 {
   "name": "voyager-cross",
-  "version": "1.1.7",
-  "description": "It is a joke",
+  "version": "1.1.8",
+  "description": "isomorphic web application generator",
+  "keywords": [
+    "react",
+    "next.js",
+    "express.js"
+  ],
   "main": "./lib/voyager.js",
   "bin": {
     "voyager": "./bin/voyager.js"
