@@ -10,7 +10,7 @@ const menu = archy(architecture);
 const execInstallNPM = require('../lib/install');
 
 program
-  .version('1.1.5')
+  .version('1.1.6')
   .option('-i, --init [name]', 'init a HTML template')
 
 program.parse(process.argv);
