@@ -1,13 +1,13 @@
 {
   "name": "voyager-cross",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "It is a joke",
   "main": "./lib/greet.js",
   "bin": {
     "greet": "./bin/index.js"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "node ./bin/index.js"
   },
   "repository": {
     "type": "git",
