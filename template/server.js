@@ -5,9 +5,7 @@ const fs = require("fs");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const compression = require("compression");
-const requestIp = require('request-ip');
 const dev = process.env.NODE_ENV !== "production";
-const configure = require("./configure/index.js");
 const app = next({ dev });
 const { DESTINATION, createSitemap } = require("./sitemap");
 const routes = require('./routes');
@@ -17,10 +15,8 @@ const handle = routes.getRequestHandler(app, ({ req, res, route, query }) => {
 
 const server = express();
 server.set("trust proxy", 1);
-server.set("port", configure.port);
 server.use(bodyParser.json({ limit: '10mb' }));
 server.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
-server.use(requestIp.mw())
 server.use(cookieParser());
 server.use(compression());
 
@@ -39,9 +35,9 @@ app.prepare().then(() => {
     return handle(req, res);
   });
 
-  server.listen(configure.port, (err) => {
+  server.listen(3000, (err) => {
     if (err) throw err;
-    console.log(`Start Application,the port number is ${configure.port}`);
+    console.log(`Start Application,the port number is ${3000}`);
   });
 });
 

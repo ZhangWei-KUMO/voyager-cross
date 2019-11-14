@@ -7,7 +7,7 @@
     "voyager": "./bin/voyager.js"
   },
   "scripts": {
-    "test": "node ./bin/voyager.js -i __test__"
+    "test": "node ./bin/voyager.js -i test"
   },
   "repository": {
     "type": "git",

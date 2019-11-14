@@ -8,8 +8,10 @@
   },
   "dependencies": {
     "react": "16.4.2",
+    "react-dom": "16.4.2",
     "express": "4.16.3",
     "express-session": "1.15.6",
+    "cookie-parser": "1.4.3",
     "glob": "^7.1.6",
     "next": "7.0.2",
     "next-nprogress": "1.4.0",
@@ -17,6 +19,7 @@
     "nodemon": "1.18.3",
     "request": "2.88.0",
     "isomorphic-unfetch": "^3.0.0",
+    "compression": "1.7.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -31,5 +34,5 @@
     "mini-css-extract-plugin": "^0.6.0",
     "webpack": "^4.4.0",
     "webpack-filter-warnings-plugin": "^1.2.1"
-  },
+  }
 }
