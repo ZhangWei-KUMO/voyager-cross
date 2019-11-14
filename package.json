@@ -1,9 +1,10 @@
 {
   "name": "voyager-cross",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "isomorphic web application generator",
   "keywords": [
     "react",
+    "SSR",
     "next.js",
     "express.js"
   ],
