@@ -1,10 +1,11 @@
 {
   "name": "voyager-cross",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "It is a joke",
   "main": "./lib/greet.js",
   "bin": {
-    "greet": "./bin/index.js"
+    "greet": "./bin/index.js",
+    "voyager": "./bin/voyager.js"
   },
   "scripts": {
     "test": "node ./bin/index.js"
@@ -23,6 +24,7 @@
     "archy": "^1.0.0",
     "chalk": "^3.0.0",
     "colors": "^1.4.0",
+    "commander": "^4.0.1",
     "figlet": "^1.2.4",
     "lodash": "^4.17.15"
   }

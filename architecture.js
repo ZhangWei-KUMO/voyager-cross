@@ -1,5 +1,5 @@
 const architecture = {
-  label: "Cloud-Wave | 云链笔记",
+  label: "Cloud-Wave",
   nodes: [
     "index.js",
     {
