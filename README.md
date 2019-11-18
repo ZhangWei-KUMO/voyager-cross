@@ -14,6 +14,8 @@ npm intall -g voyager-cross
 ```bash
 # generate your project
 voyager -i <YOUR_PROJECT_NAME>
+# enter your project
+cd <YOUR_PROJECT_NAME>
 # start then open localhost:3000
 npm run dev
 # or
